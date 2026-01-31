@@ -1,5 +1,6 @@
 # Managed repositories (cloned separately)
 0-lang/
+0-hummingbot/
 
 # OS files
 .DS_Store
