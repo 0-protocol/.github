@@ -1,0 +1,10 @@
+# Managed repositories (cloned separately)
+0-lang/
+
+# OS files
+.DS_Store
+
+# Editor files
+.idea/
+.vscode/
+*.swp
