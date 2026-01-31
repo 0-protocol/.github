@@ -34,6 +34,7 @@ For 70 years, software was constrained by human cognitive limits—variable name
 | Repository | Description | Status |
 |------------|-------------|--------|
 | **[0-lang](https://github.com/0-protocol/0-lang)** | The first programming language designed for Agent-to-Agent communication. Graph-based, content-addressed, proof-carrying. | `Genesis` |
+| **[0-hummingbot](https://github.com/0-protocol/0-hummingbot)** | High-frequency crypto trading bot reimagined in 0-lang. Translation of [hummingbot/hummingbot](https://github.com/hummingbot/hummingbot). | `Incubating` |
 
 ---
 
@@ -71,6 +72,36 @@ For 70 years, software was constrained by human cognitive limits—variable name
 04  GRAPH > TEXT       Programs are DAGs, not character streams.
 05  PROBABILISTIC      Confidence scores replace boolean certainty.
 ```
+
+---
+
+## Naming Convention
+
+All 0-protocol projects follow a consistent naming pattern:
+
+| Type | Format | Example |
+|------|--------|---------|
+| **Core Infrastructure** | `0-{name}` | `0-lang`, `0-vm`, `0-net` |
+| **Translated Project** | `0-{original}` | `0-hummingbot`, `0-fastapi` |
+| **Library/Module** | `0-{domain}` | `0-http`, `0-ws`, `0-exchange` |
+
+### Rules
+
+```
+01  PREFIX           Always "0-" (zero-dash)
+02  LOWERCASE        All names lowercase, words separated by hyphens
+03  PRESERVE         Keep recognizable name from source project
+04  NO SUFFIXES      No "-zero" or "-0" suffixes (use prefix only)
+```
+
+### Translation Strategy
+
+When translating existing projects to 0-lang:
+
+1. **Fork the logic, not the code** — Rewrite as Zero graphs
+2. **Maintain API compatibility** — Same inputs/outputs where possible
+3. **Document enhancements** — Track improvements made during translation
+4. **Feed back to 0-lang** — Missing features become 0-lang roadmap items
 
 ---
 
