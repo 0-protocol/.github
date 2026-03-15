@@ -9,3 +9,12 @@
 .idea/
 .vscode/
 *.swp
+
+# 0-dex build and local secrets
+0-dex/target/
+0-dex/out/
+0-dex/cache/
+0-dex/.env
+0-dex/.secrets.env
+__pycache__/
+*.pyc
